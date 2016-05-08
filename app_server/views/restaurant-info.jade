@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Akbar Restaurant
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p 2 South Street, Garden City
+            .panel.panel-primary
+              .panel-heading
+                h2.panel-title Opening hours
+              .panel-body    
+                  p Sunday-Thursday: 12:00PM - 3:00PM | 5:00PM - 10:00PM Friday-Saturday: 12:00PM - 3:00PM | 5:30PM - 11:00PM
+            .panel.panel-primary
+              .panel-body
+                h2.panel-title Features
+              .panel-body
+                span.label.label-warning
+                  span.glyphicon.glyphicon-ok
+                  | &nbsp Outdoor Seating
+                | &nbsp
+                span.label.label-warning
+                  span.glyphicon.glyphicon-ok
+                  | &nbsp Entertainment
+                | &nbsp
+                span.label.label-warning
+                  span.glyphicon.glyphicon-ok
+                  | &nbsp Wine & Beer
+                | &nbsp
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location 
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=40.7347156,-73.6052948&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+    
