@@ -40,10 +40,12 @@ block content
         .form-group
           label.col-sm-2.control-label(for="cuisine") Cuisine
           .col-sm-10
-            textarea#cuisine.form-control(name="cuisine", rows="5")
+            textarea#cuisine.form-control(name="cuisine", placeholder="Enter each cuisine seperated by a comma", rows="5")
         .form-group
-          label.col-xs-10.col-sm-2.control-label(for="address") Region
-          .col-xs-12.col-sm-10
-            input#name.form-control(name="address")
+          label.col-sm-2.control-label(for="features") Features
+          .col-sm-10
+            textarea#cuisine.form-control(name="feature", placeholder="Enter each feature seperated by a comma", rows="5")
+            
         button.btn.btn-default.pull-right Add Restaurant
     .col-xs-12.col-md-4
+      p.lead= sidebar
