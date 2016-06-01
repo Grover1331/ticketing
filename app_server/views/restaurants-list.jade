@@ -12,12 +12,12 @@ block content
         each restaurant in restaurants
           .col-xs-12.list-group-item
             h4 
-              a(href="/restaurant")= restaurant.restaurantName
+              a(href="/restaurant/#{restaurant._id}")= restaurant.restaurantName
               small &nbsp;
             p #{restaurant.address}, #{restaurant.city}, #{restaurant.zipcode}
             
             p
-              each cuisine in restaurant.cuisines
+              each cuisine in restaurant.cuisine
                 span.label.label-warning= cuisine
                 | &nbsp;
     .col-xs-12.col-sm-4 
