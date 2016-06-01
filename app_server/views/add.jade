@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Add Restaurant
+  .row
+    .col-xs-12.col-md-6
+      form.form-horizontal(action="", method="post", role="form")
+        - if (error == "val")
+          .alert.alert-danger(role="alert") All fields required, please try again
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="name") Restaurant Name
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="name")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="phone") Phone Number
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="phone")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="email") Email
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="email")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="address") Address
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="address")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="city") City
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="city")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="address") Zipcode
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="address")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="address") Region
+          .col-xs-12.col-sm-10
+            input#name.form-control(type='', name="address")
+        .form-group
+          label.col-sm-2.control-label(for="cuisine") Cuisine
+          .col-sm-10
+            textarea#cuisine.form-control(name="cuisine", placeholder="Enter each cuisine seperated by a comma", rows="5")
+        .form-group
+          label.col-sm-2.control-label(for="features") Features
+          .col-sm-10
+            textarea#cuisine.form-control(name="feature", placeholder="Enter each feature seperated by a comma", rows="5")
+            
+        button.btn.btn-default.pull-right Add Restaurant
+    .col-xs-12.col-md-4
+      p.lead= sidebar
