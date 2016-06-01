@@ -1,2 +1,2 @@
-# HungerPass-API
-RESTful API for HungerPASS Restaurants
+# HungerPASS-API
+RESTful API for HungerPass Restaurants
