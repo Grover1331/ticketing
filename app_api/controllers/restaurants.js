@@ -15,6 +15,8 @@ module.exports.restaurantsCreate = function (req, res) {
     address: req.body.address,
     city: req.body.city,
     zipcode: req.body.zipcode,
+    latitude: req.body.latitude,
+    longitude: req.body.longitude,
     region: req.body.region,
     price: req.body.price,
     cuisine: req.body.cuisine.toString().split(","),
@@ -132,6 +134,8 @@ module.exports.restaurantsUpdateOne = function(req, res) {
         restaurant.address = req.body.address;
         restaurant.city = req.body.city;
         restaurant.zipcode = req.body.zipcode;
+        restaurant.latitude = req.body.latitude;
+        restaurant.longitude = req.body.longitude;
         restaurant.region = req.body.region;
         restaurant.price = req.body.price;
         restaurant.cuisine = req.body.cuisine.toString().split(",");
