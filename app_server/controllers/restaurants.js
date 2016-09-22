@@ -8,9 +8,9 @@ if (process.env.NODE_ENV === 'production') {
 
 var renderHomepage = function(req, res, responseBody){
   res.render('restaurants-list', {
-    title: 'Testing Pass - Find places to dine at the best discounts!',
+    title: 'HungerPASS - Find places to dine at the best discounts!',
     pageHeader: {
-      title: 'Testing Pass',
+      title: 'HungerPASS',
       strapline: 'Find places to dine at the best discounts!'
     },
     restaurants: responseBody
