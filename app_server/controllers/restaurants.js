@@ -3,14 +3,14 @@ var apiOptions = {
   server: "http://localhost:3000"
 };
 if (process.env.NODE_ENV === 'production') {
-  apiOptions.server = "http://hungerpass.herokuapp.com"
+  apiOptions.server = "http://rocky-meadow-67164.herokuapp.com/"
 }
 
 var renderHomepage = function(req, res, responseBody){
   res.render('restaurants-list', {
-    title: 'HungerPASS - Find places to dine at the best discounts!',
+    title: 'Testing Pass - Find places to dine at the best discounts!',
     pageHeader: {
-      title: 'HungerPASS',
+      title: 'Testing Pass',
       strapline: 'Find places to dine at the best discounts!'
     },
     restaurants: responseBody

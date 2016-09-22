@@ -2,8 +2,9 @@ var mongoose = require( 'mongoose' );
 var gracefulShutdown;
 var dbURI = 'mongodb://localhost/HungerPASS';
 if (process.env.NODE_ENV === 'production') {
-  dbURI = 'mongodb://heroku_1ndjjflw:7595vu530a1onkcsahsebe5sfa@ds017852.mlab.com:17852/heroku_1ndjjflw';
+  dbURI = 'mongodb://heroku_lb534qsv:Incorrect0$@ds035856.mlab.com:35856/heroku_lb534qsv';
 }
+alert(dbURI);
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', function() {
