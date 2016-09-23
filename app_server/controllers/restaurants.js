@@ -3,7 +3,7 @@ var apiOptions = {
   server: "http://localhost:3000"
 };
 if (process.env.NODE_ENV === 'production') {
-  apiOptions.server = "http://rocky-meadow-67164.herokuapp.com"
+  apiOptions.server = "http://rocky-meadow-67164.herokuapp.com/"
 }
 
 var renderHomepage = function(req, res, responseBody){
