@@ -33,7 +33,6 @@ module.exports.homeRestaurantList = function(req, res) {
     requestOptions,
     function(err, response, body) {
       renderHomepage(req, res, body);
-		res.send(500,'Abhinav');
     }
   );
 };
