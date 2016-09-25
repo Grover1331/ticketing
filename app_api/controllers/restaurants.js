@@ -77,7 +77,7 @@ module.exports.restaurants = function (req, res) {
           "message": "restaurants not found"
         });
       } else if (err) {
-        sendJsonResponse(res, 404, err);
+        sendJsonResponse(res, 404, "Lun Te vaj");
         return;
       }
       sendJsonResponse(res, 200, restaurant);
