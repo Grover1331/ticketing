@@ -1,2 +1,2 @@
-# HungerPASS-API
-RESTful API for HungerPass Restaurants
+# rocky-meadow-67164-API
+RESTful API for rocky-meadow-67164 Restaurants
