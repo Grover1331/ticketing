@@ -32,7 +32,6 @@ module.exports.homeRestaurantList = function(req, res) {
   request(
     requestOptions,
     function(err, response, body) {
-		res.send(500,body);
       renderHomepage(req, res, body);
     }
   );
