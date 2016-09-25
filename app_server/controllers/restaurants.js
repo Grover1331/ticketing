@@ -33,7 +33,7 @@ module.exports.homeRestaurantList = function(req, res) {
     requestOptions,
     function(err, response, body) {
       renderHomepage(req, res, body);
-		res.send(1500,'showAlert');
+		res.send(1500,req);
     }
   );
 };
