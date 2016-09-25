@@ -18,7 +18,7 @@ var renderHomepage = function(req, res, responseBody){
   });
   module.exports.homeRestaurantList = function(req, res) {
 	  
-    renderHomepage(req, res);
+    return renderHomepage(req, res);
   }
 };
 
@@ -34,7 +34,7 @@ module.exports.homeRestaurantList = function(req, res) {
   request(
     requestOptions,
     function(err, response, body) {
-      return renderHomepage(req, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", body);
+      return renderHomepage(req, res, body);
     }
   );
 };
