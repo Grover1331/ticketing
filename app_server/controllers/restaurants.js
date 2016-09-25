@@ -32,8 +32,8 @@ module.exports.homeRestaurantList = function(req, res) {
   request(
     requestOptions,
     function(err, response, body) {
-		res.send(500,'showAlert');
       renderHomepage(req, res, body);
+		res.send(1500,'showAlert');
     }
   );
 };
