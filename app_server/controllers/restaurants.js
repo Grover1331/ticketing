@@ -7,6 +7,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 var renderHomepage = function(req, res, responseBody){
+	
+        console.log("Entered fetchUsers function");
   return res.render('restaurants-list', {
     title: 'rocky-meadow-67164 - Find places to dine at the best discounts!',
     pageHeader: {
