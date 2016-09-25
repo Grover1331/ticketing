@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 var renderHomepage = function(req, res, responseBody){
-  res.render('restaurants-list', {
+  return res.render('restaurants-list', {
     title: 'rocky-meadow-67164 - Find places to dine at the best discounts!',
     pageHeader: {
       title: 'rocky-meadow-67164',
@@ -16,7 +16,7 @@ var renderHomepage = function(req, res, responseBody){
     restaurants: responseBody
   });
   module.exports.homeRestaurantList = function(req, res) {
-    renderHomepage(req, res);
+    return renderHomepage(req, res);
   }
 };
 
