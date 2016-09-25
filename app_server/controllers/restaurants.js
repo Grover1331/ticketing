@@ -18,8 +18,7 @@ var renderHomepage = function(req, res, responseBody){
   });
   module.exports.homeRestaurantList = function(req, res) {
 	  
-        console.log("Entered fetchUsers function");
-    return renderHomepage(req, res);
+    renderHomepage(req, res);
   }
 };
 
@@ -36,6 +35,7 @@ module.exports.homeRestaurantList = function(req, res) {
     requestOptions,
     function(err, response, body) {
       renderHomepage(req, res, body);
+        console.log("Entered fetchUsers function");
     }
   );
 };
