@@ -34,7 +34,7 @@ module.exports.homeRestaurantList = function(req, res) {
   request(
     requestOptions,
     function(err, response, body) {
-      renderHomepage(req, res, body);
+      return renderHomepage(req, res, body);
         console.log("Entered fetchUsers function");
     }
   );
